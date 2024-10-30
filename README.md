@@ -1,2 +1,2 @@
 # kikorikorpus
-A corpus of quotes from the Kikoriki animated series
+A corpus of quotes from the Kikoriki animated series thevicsol.pythonanywhere.com/kikorikorpus
