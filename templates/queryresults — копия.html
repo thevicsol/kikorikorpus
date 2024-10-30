@@ -1,0 +1,18 @@
+{% extends 'basek.html' %}
+
+{% block content %}
+			<h1>Запрос: {{querytext}}</h1>
+			<h2>Результаты</h2>
+            {% for res in results %}
+			    <div class="row">
+				    <p class="col-md-6">{{res.name}}</p>
+					<table class="col-md-8">
+				    {% for line in res.lines %}
+						<tr>
+							<td><h3>{{line.who}}: </h3>{{line.text1}}<b>{{line.ngram}}</b>{{line.text2}}</td>
+						</tr>
+                    {% endfor %}
+					</table>
+			    </div>
+            {% endfor %}
+{% endblock %}

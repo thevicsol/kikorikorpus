@@ -1,0 +1,132 @@
+{% extends 'basek.html' %}
+
+{% block content %}
+		<form class="container" action="/search_results">
+			<h4>Слово 1</h4>
+			<div class="row">
+				<div class="col-md-4">Слово</div>
+				<div class="col-md-4"><input type="text" name="word1"></div>
+			</div>
+			<div class="row">
+                <div class="col-md-4"><input type="radio" name="lem1" value="yes" checked>Лемма<br></div>
+                <div class="col-md-4"><input type="radio" name="lem1" value="">Словоформа<br></div>
+			</div>
+			<div class="row">
+                <div class="col-md-4"><input type="radio" name="reg1" value="" checked>Обычное соответствие<br></div>
+                <div class="col-md-4"><input type="radio" name="reg1" value="yes">Регулярное выражение<br></div>
+			</div>
+			<div class="row">
+                <div class="col-md-4"><input type="radio" name="pun1" value="yes" checked>Слово может быть после знака препинания<br></div>
+                <div class="col-md-4"><input type="radio" name="pun1" value="">Слово не после знака препинания<br></div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">Часть речи</div>
+				<select name="pos1" class="col-md-4">
+					<option value=""></option>
+					<option value="ADJ">прил</option>
+					<option value="ADP">предлог</option>
+					<option value="ADV">нареч</option>
+					<option value="AUX">связка</option>
+					<option value="CONJ">союз</option>
+					<option value="CCONJ">соч. союз</option>
+					<option value="DET">определитель</option>
+					<option value="INTJ">междометие</option>
+					<option value="NOUN">сущ</option>
+					<option value="NUM">числ</option>
+					<option value="PART">част</option>
+					<option value="PRON">мест</option>
+					<option value="PROPN">им.собств.</option>
+					<option value="SCONJ">подч. союз</option>
+					<option value="SYM">символ</option>
+					<option value="VERB">глаг</option>
+					<option value="GER">деепр</option>
+					<option value="PRTCP">прич</option>
+			</select>
+			</div>
+			<h4>Слово 2</h4>
+			<div class="row">
+				<div class="col-md-4">Слово</div>
+				<div class="col-md-4"><input type="text" name="word2"></div>
+			</div>
+			<div class="row">
+                <div class="col-md-4"><input type="radio" name="lem2" value="yes" checked>Лемма<br></div>
+                <div class="col-md-4"><input type="radio" name="lem2" value="">Словоформа<br></div>
+			</div>
+			<div class="row">
+                <div class="col-md-4"><input type="radio" name="reg2" value="" checked>Обычное соответствие<br></div>
+                <div class="col-md-4"><input type="radio" name="reg2" value="yes">Регулярное выражение<br></div>
+			</div>
+			<div class="row">
+                <div class="col-md-4"><input type="radio" name="pun2" value="yes" checked>Слово может быть после знака препинания<br></div>
+                <div class="col-md-4"><input type="radio" name="pun2" value="">Слово не после знака препинания<br></div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">Часть речи</div>
+				<select name="pos2" class="col-md-4">
+					<option value=""></option>
+					<option value="ADJ">прил</option>
+					<option value="ADP">предлог</option>
+					<option value="ADV">нареч</option>
+					<option value="AUX">связка</option>
+					<option value="CONJ">союз</option>
+					<option value="CCONJ">соч. союз</option>
+					<option value="DET">определитель</option>
+					<option value="INTJ">междометие</option>
+					<option value="NOUN">сущ</option>
+					<option value="NUM">числ</option>
+					<option value="PART">част</option>
+					<option value="PRON">мест</option>
+					<option value="PROPN">им.собств.</option>
+					<option value="SCONJ">подч. союз</option>
+					<option value="SYM">символ</option>
+					<option value="VERB">глаг</option>
+					<option value="GER">деепр</option>
+					<option value="PRTCP">прич</option>
+			</select>
+			</div>
+			<h4>Слово 3</h4>
+			<div class="row">
+				<div class="col-md-4">Слово</div>
+				<div class="col-md-4"><input type="text" name="word3"></div>
+			</div>
+			<div class="row">
+                <div class="col-md-4"><input type="radio" name="lem3" value="yes" checked>Лемма<br></div>
+                <div class="col-md-4"><input type="radio" name="lem3" value="">Словоформа<br></div>
+			</div>
+			<div class="row">
+                <div class="col-md-4"><input type="radio" name="reg3" value="" checked>Обычное соответствие<br></div>
+                <div class="col-md-4"><input type="radio" name="reg3" value="yes">Регулярное выражение<br></div>
+			</div>
+			<div class="row">
+                <div class="col-md-4"><input type="radio" name="pun3" value="yes" checked>Слово может быть после знака препинания<br></div>
+                <div class="col-md-4"><input type="radio" name="pun3" value="">Слово не после знака препинания<br></div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">Часть речи</div>
+				<select name="pos3" class="col-md-4">
+					<option value=""></option>
+					<option value="ADJ">прил</option>
+					<option value="ADP">предлог</option>
+					<option value="ADV">нареч</option>
+					<option value="AUX">связка</option>
+					<option value="CONJ">союз</option>
+					<option value="CCONJ">соч. союз</option>
+					<option value="DET">определитель</option>
+					<option value="INTJ">междометие</option>
+					<option value="NOUN">сущ</option>
+					<option value="NUM">числ</option>
+					<option value="PART">част</option>
+					<option value="PRON">мест</option>
+					<option value="PROPN">им.собств.</option>
+					<option value="SCONJ">подч. союз</option>
+					<option value="SYM">символ</option>
+					<option value="VERB">глаг</option>
+					<option value="GER">деепр</option>
+					<option value="PRTCP">прич</option>
+			</select>
+			</div>
+			<div class="row">
+				<input class="submit" type="submit" name="submit" value="Искать">
+			</div>
+		</form>
+{% endblock %}

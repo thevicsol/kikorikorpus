@@ -1,0 +1,30 @@
+{% extends 'basek.html' %}
+
+{% block content %}
+			<div style="margin-bottom:50px;">
+			<h2>Запрос: {{querytext}}</h2>
+			</div>
+			<div style="margin-bottom:50px;">
+			<h2>Результаты</h2>
+			</div>
+			<div style="margin-bottom:50px;">
+			<p class="col-md-6">Вхождений: {{gramn}}</p>
+			</div>
+			<div style="margin-bottom:50px;">
+			<p class="col-md-6">Серий: {{epn}}</p>
+			</div>
+            {% for res in results %}
+			    <div class="row">
+			        <div style="margin-bottom:20px;">
+				        <h2>{{res.name}}</h2>
+					</div>
+					<table class="col-md-8">
+				    {% for line in res.lines %}
+						<tr>
+							<td><h3>{{line.who}}: </h3>{{line.text1}}<b>{{line.ngram}}</b>{{line.text2}}</td>
+						</tr>
+                    {% endfor %}
+					</table>
+			    </div>
+            {% endfor %}
+{% endblock %}
